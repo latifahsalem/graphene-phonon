@@ -1,0 +1,7 @@
+&input
+
+    fildyn='graphene.dyn'
+    zasr='simple'
+    flfrc='graphene.fc'
+
+/

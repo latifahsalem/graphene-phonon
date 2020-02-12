@@ -1,0 +1,82 @@
+&CONTROL
+
+  prefix         = 'graphene'
+  outdir         = './outdir'
+
+  pseudo_dir     = '/home/ubuntu/quantum_espresso_2019/SSSP_efficiency_pseudos'
+
+  calculation    = 'scf'
+
+  restart_mode   = 'from_scratch'
+
+  verbosity      = 'high'
+
+  tprnfor        = .TRUE.
+
+  tstress        = .TRUE.
+
+  etot_conv_thr  = 1.0D-4
+
+  forc_conv_thr  = 1.0D-3
+
+  nstep          = 50000
+
+  wf_collect     = .TRUE.
+
+/
+
+
+&SYSTEM
+
+  ibrav            = 4
+
+  celldm(1)        = 4.698
+
+  celldm(3)        = 18.616
+
+  nat              = 2
+
+  ntyp             = 1
+
+  nbnd             = 10
+
+  ecutwfc          = 110
+
+  ecutrho          = 440
+
+  occupations      = 'smearing'
+
+  smearing         = 'mp'
+
+  degauss          = 0.1
+
+/
+
+
+&ELECTRONS
+
+  diagonalization   = 'david'
+
+  electron_maxstep  = 1000
+
+  conv_thr          = 1.0e-8
+
+  mixing_beta       = 0.3
+
+/
+
+
+ATOMIC_SPECIES
+
+  C 12.01 C.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+
+  C         0.6666666666  0.3333333333  0.0000000000
+
+  C         0.3333333333  0.6666666666  0.0000000000
+
+K_POINTS (automatic)
+
+48 48 1  0 0 0
+

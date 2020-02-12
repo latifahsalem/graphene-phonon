@@ -1,0 +1,21 @@
+&input
+
+    asr='simple'
+
+    amass(1)=12.01
+
+    flfrc='graphene.fc'
+
+    flfrq='graphene.freq'
+    q_in_band_form=.true.
+    q_in_cryst_coord=.true.
+/
+
+4 
+  0.00000000 0.00000000 0.0   40   !Gamma point
+  0.33333333 0.57735027 0.0   20   !K point
+  0.00000000 0.57735027 0.0   30   !M point
+  0.00000000 0.00000000 0.0   1    !Gamma point
+
+
+

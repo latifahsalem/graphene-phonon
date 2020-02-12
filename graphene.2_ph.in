@@ -1,0 +1,18 @@
+Phonon Dispersion of graphene
+
+ &inputph
+  outdir='./outdir'
+
+  tr2_ph=1.0d-12
+
+  ldisp=.true.
+
+  nq1=12 nq2=12 nq3=1
+
+  prefix='graphene'
+
+  amass(1)=12.01
+
+  fildyn='graphene.dyn'
+/
+
